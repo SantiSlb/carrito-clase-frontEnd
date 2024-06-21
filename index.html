@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos adicionales específicos si es necesario */
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-light py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="mb-0">Tienda Online</h1>
+            <a href="carrito.html" class="text-light position-relative d-inline-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1h1.62l.401-1.606A.5.5 0 0 1 2.923 0h10.154a.5.5 0 0 1 .462.394L14.88 1H3.5l-.3 1.203h10.108L14.61 13.5a1.5 1.5 0 1 1-1.32-.885H5.486a1.5 1.5 0 1 1-2.972 0H1.72a.5.5 0 0 1-.462-.606L2.22 2H.5a.5.5 0 0 1-.5-.5zM5.557 14a1 1 0 1 0 1 1 1 1 0 0 0-1-1zm6 0a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"/>
+                </svg>
+                <span id="contador-carrito" class="badge badge-danger position-absolute" style="top: -5px; right: -5px; display: none;">0</span>
+            </a>
+        </div>
+    </header>
+    <section id="productos" class="container mt-4">
+        <div class="row" id="productos-lista">
+            <!-- Aquí se cargarán los productos dinámicamente desde JavaScript -->
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
