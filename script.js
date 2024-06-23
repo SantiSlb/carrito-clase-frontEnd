@@ -17,6 +17,7 @@
 
     const imagenURL = 'https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5f/latest/20230404205932/Krookodile.png/200px-Krookodile.png';
 
+    
     // Función para mostrar productos en la página principal
 
     function mostrarProductos() {
@@ -29,11 +30,14 @@
                     <img src="${imagenURL}" class="card-img-top" alt="Imagen del producto">
                     <div class="card-body">
                         <h5 class="card-title">${producto.nombre}</h5>
+                        <hr></hr>
                         <p class="card-text">${producto.descripcion}</p>
-                        <p class="card-text">${producto.precio.toFixed(2)}</p>
+                        <p class="card-text"> Precio $${producto.precio.toFixed(2)}</p>
+                        <hr></hr>
                         <button class="btn btn-primary btn-agregar" data-id="${producto.id}" data-nombre="${producto.nombre}" data-precio="${producto.precio}">Agregar al carrito</button>
                     </div>
                 </div>
+                
             `;
             productosContainer.appendChild(card);
         });

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const ol = document.createElement('ol');
         carritoData.forEach(producto => {
             const li = document.createElement('li');
-            li.innerHTML = `${producto.nombre} - Precio: ${producto.precio}`;
+            li.innerHTML = `${producto.nombre} - Precio: $${producto.precio}`;
             ol.appendChild(li); 
         });
         carrito.appendChild(ol);
